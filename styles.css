@@ -4,6 +4,10 @@ body {
   align-items: center;
 }
 
+p, h1 {
+  margin-bottom: 0px;
+}
+
 body, .card-box {
   display: flex;
   flex-direction: column;
@@ -36,14 +40,17 @@ body, .card-box {
 .card-genre {
   width: fit-content;
   background-color: hsl(47, 88%, 63%);
-  padding: 6px 1 0px;
+  padding: 6px 10px;
   font-weight: bold;
   border-radius: 4px;
 }
 
+.card-topic {
+  font-size: 24px;
+}
 
 .card-content {
-  width: 500px;
+  width: 38 0px;
 }
 
 .author-thumbnail {
