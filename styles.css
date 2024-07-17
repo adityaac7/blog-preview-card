@@ -1,28 +1,63 @@
-body {
-  background-color: hsl(47, 88%, 63%);
-  /*height: 100vh;*/
-  align-items: center;
+@font-face {
+  font-family: "figtree";
+  src: 
+  url(assets/fonts/static/Figtree-SemiBold.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
-p, h1 {
-  margin-bottom: 0px;
+@font-face {
+  font-family: "figtree-bold";
+  src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+  font-weight: bold;
+  font-style: normal;
 }
 
 body, .card-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "figtree-bold", Arial;
+}
+
+p {
+  margin-bottom: 0px;
+  font-family: "figtree", arial;
+}
+
+h1 {
+  margin-bottom: 0px;
+  font-size: 
+}
+
+h1:hover {
+  color: hsl(47, 88%, 63%);
+  transition: color 0.15s;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 14px;
+}
+
+
 
 .card-box {
   background-color: white;
   border-style: solid;
   border-radius: 24px;
   box-shadow: black 8px 8px;
-  width: 380px;
-  padding: 18px;
+  width: 384px;
+  padding: 24px;
+
   
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.15s;
   cursor: pointer;
 }
 
@@ -30,8 +65,16 @@ body, .card-box {
   box-shadow: black 12px 12px;
 }
 
+.author-info-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+
+}
+
 .header-image {
-  width: fit-content;
+  width: auto;
   display: block;
   border-radius: 8px;
   margin-bottom: 18px;
@@ -41,6 +84,7 @@ body, .card-box {
   width: fit-content;
   background-color: hsl(47, 88%, 63%);
   padding: 6px 10px;
+  margin-top: 8px;
   font-weight: bold;
   border-radius: 4px;
 }
@@ -50,8 +94,10 @@ body, .card-box {
 }
 
 .card-content {
-  width: 38 0px;
+  width: 380px;
 }
 
 .author-thumbnail {
+  display: inline-block;
+  width: 32px;
 }
